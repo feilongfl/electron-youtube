@@ -12,7 +12,13 @@ let mainWindow;
 
 function createWindow() {
   // 创建浏览器窗口。
-  mainWindow = new BrowserWindow({ width: 800, heigth: 600 });
+  mainWindow = new BrowserWindow({
+    width: 592,
+    height: 375,
+    autoHideMenuBar: true,
+    skipTaskbar:true,
+    alwaysOnTop:true,
+  });
 
   // 加载应用的 index.html。
   // 这里使用的是 file 协议，加载当前目录下的 index.html 文件。
